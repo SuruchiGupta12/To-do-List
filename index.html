@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Priority Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Central Card for Adding Tasks -->
+        <div class="input-card">
+            <h2>Add New Task</h2>
+            <div class="input-section">
+                <input type="text" id="task-input" placeholder="Enter a new task...">
+                <select id="task-priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button id="add-task-btn">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Priority Cards -->
+        <div class="priority-card-container">
+            <div class="priority-card" id="high-priority">
+                <h3>High Priority</h3>
+                <ul id="high-priority-list"></ul>
+            </div>
+            <div class="priority-card" id="medium-priority">
+                <h3>Medium Priority</h3>
+                <ul id="medium-priority-list"></ul>
+            </div>
+            <div class="priority-card" id="low-priority">
+                <h3>Low Priority</h3>
+                <ul id="low-priority-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

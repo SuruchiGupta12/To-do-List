@@ -1,0 +1,155 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9dfe9;
+background-image: linear-gradient(0deg, #e9dfe9 0%, #e7edf1 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#task-priority {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-task-btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+.priority-card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    gap: 100px;
+}
+
+.priority-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.priority-card h3 {
+    margin-bottom: 20px;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Priority-specific styling */
+#high-priority li {
+    border-left: 5px solid #ff4c4c; /* Bright Red for High Priority */
+    background-color: #ffe0e0; /* Light Red Background */
+}
+
+#medium-priority li {
+    border-left: 5px solid #ffa500; /* Orange for Medium Priority */
+    background-color: #fff5e0; /* Light Orange Background */
+}
+
+#low-priority li {
+    border-left: 5px solid #00bfff; /* Light Blue for Low Priority */
+    background-color: #e0f7ff; /* Very Light Blue Background */
+}
+
+#high-priority.priority-card{
+    background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 1%, #FF2525 48%, #ffffff 100%);
+
+
+}
+#medium-priority.priority-card{
+    background-color: #F7CE68;
+background-image: linear-gradient(62deg, #F7CE68 29%, #FBAB7E 62%, #ffffff 100%);
+
+}
+#low-priority.priority-card{
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 54%, #FFFB7D 100%);
+
+}
+
+.input-card{
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+}
